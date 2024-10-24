@@ -4,11 +4,12 @@ public class Flow {
     public void methodA(String input) {
         System.out.println("J");
         System.out.println("a");
-        if (!input.equals("start")) {
-            methodB("start");
-        }
+
         System.out.println("v");
         System.out.println("a");
+        if (input.equals("start")) {
+            methodB("start");
+        }
         methodC(input);
     }
 
